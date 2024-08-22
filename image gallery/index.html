@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="full-img" id="fullImgbox">
+        <img src="images\download (3).jpeg" alt="" id="fullImg">
+        <span onclick="closefullImg()">x</span> >
+    </div>
+    <head>
+        <center>
+    <nav class="main">
+        
+            <h1>Image Gallery</h1>
+        
+    </nav></center>
+</head>
+<main>
+    <div class="img-gallery">
+        <img class="same" src="images\download (1).jpeg" alt="" onclick="openfullImg(this.src)">
+        <img class="same" src="images\download (2).jpeg" alt="" onclick="openfullImg(this.src)">
+        <img class="same" src="images\download (3).jpeg" alt="" onclick="openfullImg(this.src)">
+        <img class="same" src="images\download (4).jpeg" alt="" onclick="openfullImg(this.src)">
+        <img class="same" src="images\download (5).jpeg" alt="" onclick="openfullImg(this.src)">
+        <img class="same" src="images\download6.jpeg" alt="" onclick="openfullImg(this.src)">
+        <img class="same" src="images\download7.jpeg" alt="" onclick="openfullImg(this.src)">
+        <img class="same" src="images\download8.jpeg" alt="" onclick="openfullImg(this.src)">
+        <img class="same" src="images\download9.jpeg" alt="" onclick="openfullImg(this.src)">
+
+    </div>
+</main>
+    <script>
+        var fullImgbox = document.getElementById("fullImgbox");
+        var fullImg = document.getElementById("fullImg");
+        function openfullImg(pic) {
+            fullImgbox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        function closefullImg() {
+            fullImgbox.style.display = "none";
+
+        }
+    </script>
+</body>
+
+</html>
